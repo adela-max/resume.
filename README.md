@@ -721,9 +721,7 @@ footer {
         </div>
       </div>
     </div>
-  </div>
 </section>
-
 <!-- ===================== SKILLS ===================== -->
 <section id="skills">
   <div class="section-inner">
