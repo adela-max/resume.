@@ -717,7 +717,6 @@ footer {
           <span class="about-tag">專案管理</span>
           <span class="about-tag">跨部門協作</span>
           <span class="about-tag">SEO 基礎</span>
-        </div>
         </div> </div> </div> </section>
 <!-- ===================== SKILLS ===================== -->
 <section id="skills">
