@@ -7,10 +7,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-    :root {
-      --sage: #7a9e84;
-    }
-  </style>
 /* =====================
    RESET & ROOT
 ===================== */
@@ -692,7 +688,7 @@ footer {
     <div class="about-grid">
       <div class="about-photo-wrap fade-in">
         <div class="about-photo-placeholder">🌿</div>
-    <img src="https://i.meee.com.tw/ABWdMKq.jpg" alt="Adela — Website PM" class="about-photo">
+      img src="https://i.meee.com.tw/ABWdMKq.jpg" alt="Adela — Website PM" class="about-photo">
       </div>
      <div class="about-text fade-in fade-in-delay-1">
   <div class="section-label">About Me</div>
@@ -721,7 +717,8 @@ footer {
           <span class="about-tag">文案溝通</span>
           <span class="about-tag">專案管理</span>
           <span class="about-tag">跨部門協作</span>
-          <span class="about-tag">SEO 基礎</span>    
+          <span class="about-tag">SEO 基礎</span>
+        </div>
       </div>
     </div>
   </div>
