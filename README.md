@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 /* =====================
-    RESET & ROOT
+   RESET & ROOT
 ===================== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -48,14 +48,31 @@ img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 
 /* =====================
-    NAV
+   SCROLL ANIMATION
+===================== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-in-delay-1 { transition-delay: 0.1s; }
+.fade-in-delay-2 { transition-delay: 0.2s; }
+.fade-in-delay-3 { transition-delay: 0.3s; }
+.fade-in-delay-4 { transition-delay: 0.4s; }
+
+/* =====================
+   NAV
 ===================== */
 nav {
   position: fixed; top: 0; left: 0; right: 0;
   height: 64px;
   display: flex; justify-content: space-between; align-items: center;
   padding: 0 2.5rem;
-  background: rgba(249,248,246,0.85);
+  background: rgba(249,248,246,0.9);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
   z-index: 999;
@@ -65,11 +82,37 @@ nav {
   font-size: 1.15rem;
   font-weight: 600;
   letter-spacing: 0.04em;
+  color: var(--text);
 }
 .nav-logo span { color: var(--sage); }
+.nav-links {
+  display: flex; gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--text-mid);
+  transition: color var(--transition);
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute; bottom: -3px; left: 0; right: 0;
+  height: 1px;
+  background: var(--sage);
+  transform: scaleX(0);
+  transition: transform var(--transition);
+}
+.nav-links a:hover { color: var(--sage); }
+.nav-links a:hover::after { transform: scaleX(1); }
+
+.nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--text); transition: var(--transition); }
 
 /* =====================
-    HERO SECTION
+   HERO
 ===================== */
 .hero {
   min-height: 100vh;
@@ -102,10 +145,6 @@ nav {
   animation: rotate 22s linear infinite reverse;
 }
 @keyframes rotate { to { transform: rotate(360deg); } }
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 
 .hero-content { position: relative; max-width: 640px; }
 .hero-eyebrow {
@@ -156,100 +195,9 @@ nav {
   cursor: pointer;
   border: none; font-family: inherit;
 }
-.btn-primary { background: var(--sage); color: #fff; }
-.btn-primary:hover { background: #668a70; transform: translateY(-2px); box-shadow: var(--shadow-sm); }
-
-/* =====================
-    ABOUT SECTION
-===================== */
-.section-about {
-  padding: 100px 2.5rem;
-  max-width: 1100px;
-  margin: 0 auto;
+.btn-primary {
+  background: var(--sage); color: #fff;
 }
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 5rem;
-  align-items: center;
-}
-.about-photo-container {
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  background: var(--sage-pale);
-}
-.about-photo {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  aspect-ratio: 4/5;
-}
-.section-label {
-  color: var(--sage);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  margin-bottom: 0.5rem;
-}
-.section-title {
-  font-family: 'Noto Serif TC', serif;
-  font-size: 2.2rem;
-  margin-bottom: 1.5rem;
-}
-
-@media (max-width: 768px) {
-  .about-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .hero { padding-top: 6rem; }
-}
-</style>
-</head>
-<body>
-
-<nav>
-  <div class="nav-logo">ADELA<span>.</span></div>
-</nav>
-
-<main>
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-deco hero-deco-1"></div>
-    <div class="hero-deco hero-deco-2"></div>
-    
-    <div class="hero-content">
-      <div class="hero-eyebrow">Website PM / Planner</div>
-      <h1>透過規劃與溝通<br>打造<strong>有溫度的數位體驗</strong></h1>
-      <p class="hero-desc">我是 Adela，擅長將複雜的需求轉化為清晰的網站架構。在美感與邏輯之間，為品牌建立最具信任感的數位形象。</p>
-      <div class="hero-cta">
-        <a href="#about" class="btn btn-primary">了解更多</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="section-about">
-    <div class="about-grid">
-      <div class="about-photo-wrap">
-        <div class="about-photo-container">
-          <img src="https://i.meee.com.tw/ABWdMKq.jpg" alt="Adela" class="about-photo">
-        </div>
-      </div>
-
-      <div class="about-text">
-        <div class="section-label">ABOUT ME</div>
-        <h2 class="section-title">用規劃與溝通，<br>讓網站真正發揮作用</h2>
-        <div class="about-desc" style="color: var(--text-mid);">
-          <p style="margin-bottom: 1rem;">我是 Adela，一位專注於網站規劃的 Website PM / Planner。從需求訪談、架構設計到品質確認，我參與專案的每個環節。</p>
-          <p style="margin-bottom: 1rem;">我相信好的網站不只是外觀漂亮，更需要清晰的邏輯、順暢的動線，以及能傳遞品牌價值的內容。</p>
-          <p>至今已協助 25+ 個品牌建立網站，陪伴不同產業建立清晰的數位形象。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-</body>
-</html>
 .btn-primary:hover { background: #5f8068; transform: translateY(-2px); box-shadow: var(--shadow-md); }
 .btn-outline {
   background: transparent; color: var(--text);
@@ -740,7 +688,7 @@ footer {
     <div class="about-grid">
       <div class="about-photo-wrap fade-in">
         <div class="about-photo-placeholder">🌿</div>
-        <img src="https://i.meee.com.tw/ABWdMKq.jpg" alt="Adela" class="about-photo">
+    <img src="https://i.meee.com.tw/ABWdMKq.jpg" alt="Adela — Website PM" class="about-photo">
       </div>
      <div class="about-text fade-in fade-in-delay-1">
   <div class="section-label">About Me</div>
