@@ -653,7 +653,7 @@ footer {
     <div class="hero-eyebrow">Website PM · Website Planner</div>
    <h1>
   嗨，我是 Adela<br>
-  <strong>專注於網站規劃與專案管理。</strong>
+  <strong>專注於網站規劃與專案管理</strong>
 </h1>
 <p class="hero-desc">
   負責網站專案的前期規劃、需求整理與跨部門溝通，
