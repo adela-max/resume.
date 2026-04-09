@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adela — Website PM / Website Planner</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adela — Website PM / Website Planner</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* 1. 這裡放妳所有的 CSS 代碼 (例如: :root, nav, .hero 等等) */
+    
+    :root {
+      --sage: #7a9e84;
+    }
+  </style>
 /* =====================
    RESET & ROOT
 ===================== */
@@ -717,8 +725,7 @@ footer {
           <span class="about-tag">文案溝通</span>
           <span class="about-tag">專案管理</span>
           <span class="about-tag">跨部門協作</span>
-          <span class="about-tag">SEO 基礎</span>
-        </div>
+          <span class="about-tag">SEO 基礎</span>    
       </div>
     </div>
   </div>
