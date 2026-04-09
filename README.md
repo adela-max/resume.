@@ -719,8 +719,6 @@ footer {
           <span class="about-tag">SEO 基礎</span>
         </div>
       </div>
-    </div>
-  </div>
 </section>
 
 <!-- ===================== SKILLS ===================== -->
