@@ -688,7 +688,7 @@ footer {
     <div class="about-grid">
       <div class="about-photo-wrap fade-in">
         <div class="about-photo-placeholder">🌿</div>
-      img src="https://i.meee.com.tw/ABWdMKq.jpg" alt="Adela — Website PM" class="about-photo">
+     <img src="https://i.meee.com.tw/ABWdMKq.jpg" alt="Adela — Website PM" class="about-photo">
       </div>
      <div class="about-text fade-in fade-in-delay-1">
   <div class="section-label">About Me</div>
