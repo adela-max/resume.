@@ -719,7 +719,8 @@ footer {
           <span class="about-tag">SEO 基礎</span>
         </div>
 </section>
-
+</div>
+</div>
 <!-- ===================== SKILLS ===================== -->
 <section id="skills">
   <div class="section-inner">
