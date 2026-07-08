@@ -692,24 +692,24 @@ footer {
      <div class="about-text fade-in fade-in-delay-1">
   <div class="section-label">About Me</div>
   <h2 class="section-title">用規劃與溝通，<br>讓網站真正發揮作用</h2>
+<p>
+  我是 Adela，一位具備網站專案管理經驗的 <strong>Website PM</strong>。
+  從需求確認、資訊架構規劃、跨部門溝通到網站上線前的功能確認，
+  我參與網站專案的每個重要階段，確保專案順利完成並如期上線。
+</p>
 
-  <p>
-    我是 Adela，一位專注於網站規劃的 <strong>Website PM / Planner</strong>。
-    從需求確認、資訊架構設計到內容溝通與網站上線前的品質確認，
-    我參與網站專案的每個重要環節。
-  </p>
+<p>
+  我相信好的網站不只是擁有美觀的設計，
+  更需要<strong>清晰的架構邏輯</strong>、<strong>流暢的使用體驗</strong>，
+  以及<strong>穩定可靠的功能</strong>，才能真正為使用者與品牌創造價值。
+</p>
 
-  <p>
-    我相信好的網站不只是外觀漂亮，
-    更需要<strong>清晰的架構邏輯</strong>、<strong>順暢的使用動線</strong>，
-    以及能真正傳遞品牌價值的內容。
-  </p>
-
-  <p>
-    至今已協助 <strong>25+</strong> 個品牌建立網站，
-    產業橫跨診所、法律顧問、美容美髮、寵物、音響等不同領域，
-    陪伴品牌一步步建立清晰且具信任感的數位形象。
-  </p>
+<p>
+  至今已協助 <strong>25+</strong> 個品牌完成網站建置，
+  產業涵蓋診所、法律顧問、美容美髮、寵物、音響等不同領域。
+  在每個專案中，我持續累積跨部門協作、問題協調與細節確認的經驗，
+  也培養了對產品品質與使用體驗的重視。
+</p>
 </div>
         <div class="about-tags">
           <span class="about-tag">網站規劃</span>
